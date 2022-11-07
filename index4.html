@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html,
+    body,
+    header,
+    .carousel{
+      height: 60vh;
+    }
+    @media (max-width: 740px){
+     html,
+    body,
+    header,
+    .carousel{
+      height: 100vh;
+    }
+    @media (min-width: 800px) and (max-width: 850px;){
+     html,
+    body,
+    header,
+    .carousel{
+      height: 100vh;
+    }
+  }
+}
+  </style>
+</head>
+<!--Библиотека jQuery-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-c36bcaf1.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-c36bcaf1.css" rel="stylesheet">
+<body>
+
+  <!-- Start your project here-->
+  <nav class=" navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+     <div class="container">
+       <a href="#" class="navbar-brand waves-effect">
+         <strong class="green-text">Fiesta Food</strong>
+       </a>
+       <button class="navbar-toggler" type="button"
+       data-toggle="collapse" data-target="#navbarContent"
+       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarContent"></div>
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a href="#" class="nav-link waves-effect">Главная</a>
+         </li>
+         <li class="nav-item">
+           <a href="Cabinet.php" class="nav-link waves-effect">Аккаунт</a>
+         </li>
+       </ul>
+       <ul class="navbar-nav nav-flex-icons">
+
+         <li class="nav-item">
+           <a href="#" class="nav-link waves-effect">
+            <i class="fab fa-vk"></i>
+          </a>
+         </li>
+         <li class="nav-item">
+           <a href="#" class="nav-link waves-effect">
+            <i class="fab fa-instagram"></i>
+          </a>
+         </li>
+       </ul>
+     </div>
+  </nav>
+
+
+  <div id="carousel-ex" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#carousel-ex" data-slide-to="0"></li>
+      <li data-target="#carousel-ex" data-slide-to="1"></li>
+      <li data-target="#carousel-ex" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carosel-item active">
+        <div class="view" style="background-image: url('https://yandex.ru/images/_crpd/IqkC13498/d4155bd3_shP/15J38JFqCdeZGbSMg_b1nKy6EPfvJHPPSpBr8aUEEgekxDHqf1IurGfgY4FlBQ_GjRf4JeVBu95H8FHSwmoZW4cCU1C1f0iynbigOdaShYwJv9Wyu1HjfzrRS-HkgfNQ');
+        background-repeat: no-repeat; background-size: cover;">
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+            <div class="text center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Бесплатная доставка</strong>
+              </h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="carosel-item">
+        <div class="view" style="background-image: url('https://avatars.mds.yandex.net/get-zen_doc/1950904/pub_5d4f202abf50d500c41c624f_5d4f23c32f4ad700ac56124e/scale_1200');
+        background-repeat: no-repeat; background-size: cover;">
+
+        </div>
+      </div>
+       <div class="carosel-item">
+        <div class="view" style="background-image: url('https://d16yj43vx3i1f6.cloudfront.net/uploads/2016/09/Cicis-Oncap-Small-Kirk-160913.jpg');
+        background-repeat: no-repeat; background-size: cover;">
+
+        </div>
+      </div>
+    </div>
+    <a href="#carousel-ex" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carosel-control-prev-icon" aria-hedden="true"></span>
+    </a>
+    <a href="#carousel-ex" class="carousel-control-next" role="button" data-slide="next">
+      <span class="carosel-control-next-icon" aria-hedden="true"></span>
+    </a>
+  </div>
+  <main>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
+
+        <span class="navbar-brand">Категории</span>
+
+         <button class="navbar-toggler" type="button"
+       data-toggle="collapse" data-target="#nextNav"
+       aria-controls="nextNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+       </button>
+          <div class="collapse navbar-collapse" id="nextNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Пицца</a>
+              </li>
+              <li class="nav-item">
+                <a href="index2.html" class="nav-link">Бургеры</a>
+              </li>
+              <li class="nav-item">
+                <a href="index3.html" class="nav-link">Роллы</a>
+              </li>
+              <li class="nav-item active">
+                <a href="index4.html" class="nav-link">Лапша WOK</a>
+              </li>
+              <li class="nav-item">
+                <a href="index5.html" class="nav-link">Напитки</a>
+              </li>
+            </ul>
+
+          </div>
+      </nav>
+      <section class="text-center mb-4">
+        <div class="row wow fadeIn">
+          <div class="col-lg-3 col md-6 mb-4">
+            <div class="card">
+              <div class="view overlay">
+                <img class="card-img-top" src="https://316024.selcdn.ru/wiget/b8fab4f0-8255-11e5-80d2-d8d38565926f/b934c7b9-1d25-4944-ab30-7eaf369ea8c5_Large_.jpg" alt="Морс">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Лапша</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="dark-grey-text">
+                    С курицей <!--<span class="badge-pill danger-color">Новинка</span> -->
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold green-text">
+                  <strong>185Р</strong>
+                </h4>
+                <button type="button" class="btn btn-dark-green btn-ens-action btn-ens-style" data-rel="c36bcaf1185840">В корзину</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col md-6 mb-4">
+            <div class="card">
+              <div class="view overlay">
+                <img class="card-img-top" src="https://316024.selcdn.ru/wiget/b8fab4f0-8255-11e5-80d2-d8d38565926f/20607329-827b-49a7-9f15-e05c6fe36ac4_Large_.jpg" alt="Cola">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Лапша</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="dark-grey-text">
+                     Со свининой
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold green-text">
+                  <strong>195Р</strong>
+                </h4>
+                <button type="button" class="btn btn-dark-green btn-ens-action btn-ens-style" data-rel="c36bcaf1185836">В корзину</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col md-6 mb-4">
+            <div class="card">
+              <div class="view overlay">
+                <img class="card-img-top" src="https://316024.selcdn.ru/wiget/b8fab4f0-8255-11e5-80d2-d8d38565926f/6d22777f-8097-4230-954e-778e3ddad990_Large_.jpg" alt="Fanta">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Лапша</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="dark-grey-text">
+                      С овощами
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold green-text">
+                  <strong>200Р</strong>
+                </h4>
+                <button type="button" class="btn btn-dark-green btn-ens-action btn-ens-style" data-rel="c36bcaf1185836">В корзину</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col md-6 mb-4">
+            <div class="card">
+              <div class="view overlay">
+                <img class="card-img-top" src="https://316024.selcdn.ru/wiget/b8fab4f0-8255-11e5-80d2-d8d38565926f/b7df8aec-5028-49a1-939a-099027b27e5f_Large_.jpg" alt="Sprite">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Лапша</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="dark-grey-text">
+                      С говядиной
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold green-text">
+                  <strong>190Р</strong>
+                </h4>
+                <button type="button" class="btn btn-dark-green btn-ens-action btn-ens-style" data-rel="c36bcaf1185836">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                                                                          <!--<nav class="d-flex justify-content-center wow fadeIn">
+                                                                          <ul class="padination pg-blue">
+                                                                            <li class="page-item disabled">
+                                                                              <a href="" class="page-link" aria-label="Previous">
+                                                                                <span aria-hidden="true">&laquo;</span>
+                                                                              </a>
+                                                                            </li>
+                                                                          </ul>
+                                                                        </nav>-->
+    </div>
+  </main>
+
+ <footer class="page-footer font-small stylish-color-dark pt-3">
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <a href="reg.html" class="btn btn-danger btn-rounded">Зарегистрироватся</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="login.html" class="btn btn-danger btn-rounded">Войти</a>
+    </li>
+  </ul>
+
+
+
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-instagram"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-vk"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-youtube"> </i>
+      </a>
+    </li>
+  </ul>
+</footer>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
+
+<!--
+<h1 class="mb-4">
+                <strong>Пицца</strong>
+              </h1>
+              <p>
+                <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, expedita.</strong>
+              </p>
+              <p class="mb-4 d-none d-md-block">
+                <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, sunt nam natus laudantium, recusandae consequuntur!</strong>
+              </p>
+              <a href="#" class="btn btn-outline-white btn-lg">
+                Lorem ipsum dolor. <i class="fa fa-gradiation-cap ml-2"></i>
+              </a>
